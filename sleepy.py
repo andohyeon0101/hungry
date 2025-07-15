@@ -8,7 +8,7 @@ st.title("🌱 S&P 500 ESG 리스크 3D 시각화")
 uploaded_file = st.file_uploader("📁 ESG CSV 파일을 업로드하세요", type="csv")
 
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv("SP 500 ESG Risk Ratings.csv")
     
     # 필요한 컬럼 추출 및 결측치 제거
     required_cols = [
